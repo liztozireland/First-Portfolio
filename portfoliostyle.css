@@ -18,6 +18,7 @@ body {
 .header h1 {
     display: inline-block;
     font-size: 48px;
+    color: #455f65;
 }
 
 .header div {
@@ -42,6 +43,26 @@ a {
     text-decoration: underline;
 }
 
+/* unvisited link */
+a:link {
+    color: #E93479;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #F9AC53;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #94167F;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #94167F;
+  }
+
 p {
     font-size: 16px;
     color: white;
@@ -55,6 +76,15 @@ p {
 .float-right {
     float: right;
     margin-left: 25px;
+}
+
+.hero {
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .content {
