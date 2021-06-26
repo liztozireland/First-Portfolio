@@ -5,23 +5,19 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: #000000;
 }
 
 .header {
-    padding: 20px;
+    padding: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #2a607c;
+    background-color: #000000;
     color: #ffffff;
 }
 
 .header h1 {
     display: inline-block;
     font-size: 48px;
-}
-
-.header h1 .seo {
-    color: #d9dcd6;
 }
 
 .header div {
@@ -43,9 +39,47 @@ body {
 
 a {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 p {
     font-size: 16px;
+    color: white;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.container-1 div {
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.footer h2 {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
