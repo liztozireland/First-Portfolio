@@ -1,7 +1,12 @@
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+:root{
+  --blue: #455f65;
 }
 
 body {
@@ -18,7 +23,7 @@ body {
 .header h1 {
     display: inline-block;
     font-size: 48px;
-    color: #455f65;
+    color: var(--blue);
 }
 
 
@@ -67,7 +72,7 @@ p {
 h2 {
     display: inline-block;
     font-size: 30px;
-    color: #455f65;
+    color: var(--blue);
 }
 
 
@@ -139,10 +144,10 @@ h2 {
   .code-card .card-header {
     /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
     position: relative;
-    margin: -4rem 0 1.5rem 0;
+    margin: -1rem 0 1.5rem 0;
     padding: 0.5rem 1rem;
     background-color: var(--outer-space);
-    color: var(--heliotrope);
+    color: var(--blue);
     border: 2px solid var(--gin);
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
@@ -157,23 +162,6 @@ h2 {
   /* each card's code block grows to the height of the largest code block on the page, making each card even in height */
   .code-card .code-block {
     flex-grow: 1;
-  }
-  
-  .code-card pre {
-    /* set styles to make it so code wraps in <pre> instead of overflowing */
-    white-space: pre-wrap;
-    overflow: auto;
-    tab-size: 4;
-    padding: 1.2rem 1rem;
-    color: var(--gin);
-    border-radius: 8px;
-    /* use linear-gradient() function to create a fading background  */
-    background-image: linear-gradient(
-      rgba(232, 102, 236, 0.3) 0%,
-      rgba(232, 102, 236, 0.6) 100%
-    );
-    display: flex;
-    align-items: center;
   }
   
   /* on <pre> click, select all contents so the code is highlighted */
