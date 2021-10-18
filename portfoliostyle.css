@@ -40,7 +40,7 @@
 }
 
 a {
-    color: #E93479;
+    color: #712275;
     text-decoration: underline;
 }
   
@@ -51,7 +51,7 @@ a {
   
   /* mouse over link */
   a:hover {
-    color: whitesmoke;
+    color: #E68E36;
   }
   
   /* selected link */
@@ -68,6 +68,7 @@ h2 {
     font-size: 30px;
     margin-left: 25px;
     padding: 15px;
+    color: #ff00c1;
 }
 .col-md-2 {
   padding: 15px;
@@ -104,6 +105,9 @@ h2 {
 
 .card-body div ul {
   list-style-type: none;
+  font-size: 20px;
+  float: center;
+  
 }
 
 .card-body div ul li {
@@ -114,8 +118,8 @@ h2 {
 
 .card-body img {
   display: inline-block;
+  margin-right: 25px;
   margin-left: 25px;
-  padding: 15px;
 }
 
 
@@ -139,9 +143,10 @@ h2 {
   }
 
   .card-body {
-    flex: 1 1 auto;
+    /* display: flex; */
     min-height: 1px;
     padding: 1.25rem;
+    
   }
   
   .code-card {
