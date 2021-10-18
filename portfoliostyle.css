@@ -9,14 +9,10 @@
   --blue: #455f65;
 }
 
-body {
-    background-color: #000000;
-}
 
 .header {
     padding: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #000000;
     color: #ffffff;
 }
 
@@ -66,13 +62,16 @@ a {
 
 p {
     font-size: 16px;
-    color: white;
 }
 
 h2 {
     display: inline-block;
     font-size: 30px;
     color: var(--blue);
+    margin-left: 25px;
+}
+.col-md-2 {
+  padding: 15px;
 }
 
 
@@ -102,6 +101,7 @@ h2 {
     margin-left: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
+    background-color: #000000
 }
 
 /* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
@@ -111,6 +111,7 @@ h2 {
     flex-direction: row;
     margin-left: -2rem;
     margin-right: -2rem;
+    background-color: #000000
   }
   
   
