@@ -3,11 +3,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-color: #DEFFFA;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-:root{
-  --blue: #455f65;
-}
 
 
 .header {
@@ -19,7 +18,7 @@
 .header h1 {
     display: inline-block;
     font-size: 48px;
-    color: var(--blue);
+    color: #ff00c1;
 }
 
 
@@ -47,12 +46,12 @@ a {
   
   /* visited link */
   a:visited {
-    color: #F9AC53;
+    color: 	#9600ff;
   }
   
   /* mouse over link */
   a:hover {
-    color: #94167F;
+    color: whitesmoke;
   }
   
   /* selected link */
@@ -67,8 +66,8 @@ p {
 h2 {
     display: inline-block;
     font-size: 30px;
-    color: var(--blue);
     margin-left: 25px;
+    padding: 15px;
 }
 .col-md-2 {
   padding: 15px;
@@ -101,8 +100,24 @@ h2 {
     margin-left: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
-    background-color: #000000
 }
+
+.card-body div ul {
+  list-style-type: none;
+}
+
+.card-body div ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+
+.card-body img {
+  display: inline-block;
+  margin-left: 25px;
+  padding: 15px;
+}
+
 
 /* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
 .row {
@@ -111,7 +126,6 @@ h2 {
     flex-direction: row;
     margin-left: -2rem;
     margin-right: -2rem;
-    background-color: #000000
   }
   
   
@@ -125,16 +139,17 @@ h2 {
   }
 
   .card-body {
-    margin-left: 30px;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
   }
   
-  /* make each code card a flexbox column to align and justify content within it */
   .code-card {
     display: flex;
     justify-content: space-between;
     min-height: 100%;
     padding: 2rem;
-    color: var(--heliotrope);
+
   
     /* outline is like border, but on the outside of the box instead of inside */
     outline: 2px dashed var(--gin);
@@ -161,22 +176,21 @@ h2 {
   }
   
   /* each card's code block grows to the height of the largest code block on the page, making each card even in height */
-  .code-card .code-block {
+  /* .code-card .code-block {
     flex-grow: 1;
   }
-  
+   */
   /* on <pre> click, select all contents so the code is highlighted */
-  .code-card pre:active {
+  /* .code-card pre:active {
     user-select: all;
-  }
+  } */
 
 .footer {
     padding: 30px;
     clear: both;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: #000000;
-    color: #ffffff;
+    color: #000000;
 }
 
 .footer h2 {
